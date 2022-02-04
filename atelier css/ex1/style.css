@@ -1,0 +1,49 @@
+ul{
+    display: table;
+    width: 500px;
+    margin: 50px auto;
+    padding: 0;
+    font: 1.1em sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3),
+    0 5px 10px rgba(0,0,0,.25),
+    0 20px 20px rgba(0,0,0,.15) ;
+}
+ul li{
+    display: table-cell;
+    background:dodgerblue;
+    background: linear-gradient(deepskyblue,dodgerblue);
+}
+ul li a{
+    display: block; 
+    text-align: center;
+    text-decoration: none; 
+    padding: 8px 8px 17px 8px;
+    color: black;
+    color: rgba(0,0,0,.7); 
+    text-shadow: 0 1px 0 rgba(255,255,255,.4); 
+    box-shadow: 0 1px 0 rgba(255,255,255,.7) inset, 
+    0 -1px 0 hsl(210,100%,32%) inset,
+    0 -2px 0 hsl(210,100%,38%) inset,
+    0 -3px 0 hsl(210,100%,44%) inset,
+    0 -4px 0 hsl(210,100%,50%) inset,
+    0 -5px 0 hsl(210,100%,60%) inset;
+}
+ul li a:hover, ul li a:focus{
+    background: rgba(255,255,255,.2);padding:8px 25px 17px 25px;
+box-shadow: 0 1px 0 rgba(255,255,255,.7) inset,
+0 -1px 0 hsl(210,100%,42%) inset,
+0 -2px 0 hsl(210,100%,48%) inset,
+0 -3px 0 hsl(210,100%,54%) inset,
+0 -4px 0 hsl(210,100%,60%) inset,
+0 -5px 0 hsl(210,100%,70%) inset;
+}
+ul li a:active{
+    background: rgba(0,0,0,.15);
+    background: -webkit-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    background: -moz-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    background: -ms-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    background: -o-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+    }

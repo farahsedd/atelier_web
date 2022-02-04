@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <h3 align="center">Inscription en license</h3>
+    <fieldset align="center"> <legend>Informations personnelles</legend>
+    <label for="nom">Votre nom</label> <input id="nom" type="text" placeholder="votre nom?"> <br>
+    <label for="pre">Votre prénom</label> <input type="text" placeholder="votre prénom?" id="pré"> <br>
+    <label for="age">Votre age</label> <input type="number" placeholder="votre age?" id="age"> <br>
+    <label for="adr">Votre adresse</label> <textarea id="adr" cols="30" rows="10" placeholder="votre adresse?"></textarea> <br>
+    <label for="mdp">Mot de passe</label> <input type="password"  id="mdp" required> <br>
+    <label for="rmdp">Repeter votre mot de passe </label> <input type="password"  id="rmdp" required> <br>
+    <label for="email">Votre Email</label> <input type="email" > <br>
+    <label for="url">Votre site</label> <input type="url"> <br>
+    <label for="datenaissaince">Votre date de naissance</label> <input type="date" > <br>
+    <label for="securité">code de sécurité</label> <input type="text" pattern="[I][N][S][A][T][0-9]{4}">
+    </fieldset>
+
+    <fieldset align="center"> <legend>Gestion des groupes et des options</legend>
+        Votre groupe: <input type="radio" name="grp" id="grp1" > groupe 1 <input type="radio" name="grp" id="grp2" >groupe2<input type="radio" name="grp" id="grp3" >groupe3 <br>
+        <label for="nce" placeholder="Numéro de carte d'étudiant?">Numéro de cate d'étudiant:</label> <input type="text" id="nce"> <br>
+        <label for="opt">choisissez les options que vous désirez:</label> <select name="option" id="opt"><br>
+            <option value="j2ee">J2ee</option>
+            <option value="android">Android</option>
+            <option value="net">.Net</option>
+            <option value="html5">HTML5</option>
+            <option value="flex">Flex</option>
+        </select>
+    </fieldset>
+   
+    <a href="insat.html"><input type="submit" value="valider"></a>
+  <a href="inscription.html"><input type="reset" value="réinitialiser"></a>
+</form>
+</body>
+</html>
