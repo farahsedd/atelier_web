@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Livraison de sandwichs</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/morph/bootstrap.css">
+</head>
+<body>
+ <div style="margin-top: 50px" class="d-flex justify-content-center">
+     <div>
+
+    <h1>Livraison de sandwichs</h1>
+    <form enctype="multipart/form-data" action="./recap.php" method="POST">
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <br>
+            <input type="text" name="nom"  id="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prenom:</label>
+            <br>
+            <input type="text" name="prenom"  id="prenom" required >
+        </div>
+        <div class="form-group">
+            <label for="nbSandwich">Nombre de sandwichs:</label>
+            <br>
+            <input type="number" min="1" name="nbSandwich"  id="nbSandwich" required>
+        </div>
+        <div class="form-group">
+            <label for="adresse">Adresse:</label>
+            <br>
+            <textarea name="adresse" id="adresse" cols="30" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="type">Type du sandwich:</label>
+            <br>
+            <select name="type" id="type" required>
+                <option>choisir le type du sandwich</option>
+                <option value="viande">Viande</option>
+                <option value="poulet">Poulet</option>
+                <option value="escalope">Escalope</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Ingredients à ajouter:</p>
+            <label for="harissa">harissa</label>
+            <input type="checkbox" name="harissa" id="harissa" value="harissa" />
+            <label for="salade">salade</label>
+            <input type="checkbox" name="salade" id="salade" value="salade"/>
+            <label for="mayonnaise">mayonnaise</label>
+            <input type="checkbox" name="mayonnaise" id="mayonnaise" value="mayonnaise"/>
+        </div>
+        <div class="form-group">
+        <label for="cin">CIN:</label>
+        <input type="file" name="cin" id="cin">
+    </div>
+        <div class="d-flex justify-content-center form-group">
+            <button type="submit">Passer commande</button>
+        </div>
+
+    </form></div>
+     <?php include'recap.php';  ?>
+
+ </div>
+</body>
+</html>
